@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Jiju</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1 class="header">🎉 Happy Birthday Jiju 🎉</h1>
+
+<section class="gallery">
+
+  <div class="card slide-up">
+    <img src="images/2.jpg" alt="pic1" />
+    <p>Fun memory 1</p>
+  </div>
+
+  <div class="card slide-up">
+    <img src="images/3.jpg" alt="pic2" />
+    <p>Fun memory 2</p>
+  </div>
+
+  <div class="card slide-up">
+    <img src="images/4.jpg" alt="pic3" />
+    <p>Fun memory 3</p>
+  </div>
+  <div class="card slide-up">
+    <img src="images/5.jpg" alt="pic3" />
+    <p>Fun memory 4</p>
+  </div>
+  <div class="card slide-up">
+    <img src="images/6.jpg" alt="pic3" />
+    <p>Fun memory 5</p>
+  </div>
+  <div class="card slide-up">
+    <img src="images/7.jpg" alt="pic3" />
+    <p>Fun memory 6</p>
+  </div>
+  <div class="card slide-up">
+    <img src="images/8.jpg" alt="pic3" />
+    <p>Fun memory 7</p>
+  </div>
+  <div class="card slide-up">
+    <img src="images/9.jpg" alt="pic3" />
+    <p>Fun memory 8</p>
+  </div>
+
+
+</section>
+
+<footer>❤️ Made for Jiju ❤️</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  });
+
+  document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
